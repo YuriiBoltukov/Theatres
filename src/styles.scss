@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face{
+    font-family: 'OpenSans-Bold' ,sans-serif;
+    src: url('../src/assets/fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-size: normal;
+    font-display: swap;   
+}
+@font-face{
+    font-family: 'OpenSans-SemiBold' ,sans-serif;
+    src: url('../src/assets/fonts/OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-size: normal;
+    font-display: swap;   
+}
+@font-face{
+    font-family: 'OpenSans-Regular' ,sans-serif;
+    src: url('../src/assets/fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: 400;
+    font-size: normal;
+    font-display: swap;   
+}
+@font-face{
+    font-family: 'OpenSansCondensed-Light' ,sans-serif;
+    src: url('../src/assets/fonts/OpenSansCondensed-Light.woff') format('woff');
+    font-weight: 300;
+    font-size: normal;
+    font-display: swap;   
+}
+@font-face{
+    font-family: 'OpenSansCondensed-Bold' ,sans-serif;
+    src: url('../src/assets/fonts/OpenSansCondensed-Bold.woff') format('woff');
+    font-weight: 700;
+    font-size: normal;
+    font-display: swap;   
+}
+
+@import "./variables.scss";
+
+html, body {
+    height: 100%;
+    background: $color-third;
+}
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*,*::after,*::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    position: relative;
+    font-family: 'OpenSans-Regular', sans-serif;
+    font-size: 14px;
+    line-height: 1.5rem;
+    color: $color-primary;
+    margin: 0;
+    padding-top: 100px;
+}
+a {
+    color: $color-primary;
+    text-decoration: none;
+}
+.container {
+    max-width: 1950px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+ 

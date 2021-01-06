@@ -1,0 +1,50 @@
+<header class="header container"> 
+    <div class="menu-burger">
+        <button class="menu-burger__btn" [ngClass]="this.activeMenu ? 'menu-burger_btn_active' : ''" (click)="toggleClass()"></button>
+        <nav class="menu-burger__nav" [ngClass]="this.activeMenu ? '' : 'menu-burger_none'">
+            <ul class="menu-burger__list">
+                <li class="menu-burger__list-item">
+                    <a class="menu-burger__list-link" href="#" (click)="toggleClass()">Главная</a>
+                </li>
+                <li class="menu-burger__list-item">
+                    <a class="menu-burger__list-link" href="#" (click)="toggleClass()">О театре</a>      
+                </li>
+                <li class="menu-burger__list-item">
+                    <a class="menu-burger__list-link" href="#" (click)="toggleClass()">Наши постановки</a>
+                </li>
+                <li class="menu-burger__list-item">
+                    <a class="menu-burger__list-link" href="#" (click)="toggleClass()">Партнеры театра</a>
+                </li>
+                <li class="menu-burger__list-item">
+                    <a class="menu-burger__list-link" href="#" (click)="toggleClass()">Контакты</a>
+                </li>
+                <li class="menu-burger__list-item" routerLinkActive="menu__list-link_active">
+                    <a class="menu-burger__list-link" href="#" routerLink="/statistics" (click)="toggleClass()">Статистика</a>
+                </li>
+            </ul> 
+         </nav>
+    </div>
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Главная</a>
+            </li>
+            <li class="menu__list-item">
+                <a class="menu__list-link" href="#">О театре</a>      
+            </li>
+            <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Наши постановки</a>
+            </li>
+            <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Партнеры театра</a>
+            </li>
+            <li class="menu__list-item">
+                <a class="menu__list-link" href="#">Контакты</a>
+            </li>
+            <li class="menu__list-item" routerLinkActive="menu__list-link_active">
+                <a class="menu__list-link" href="#" routerLink="/statistics">Статистика</a>
+            </li>
+        </ul> 
+     </nav>
+     <a class="header__phone" href="tel:84951234567">+7 495 123-45-67</a>    
+</header>

@@ -1,0 +1,27 @@
+$color-primary: #ffffff;
+$color-secondary: #D1A954;
+$color-third: #333333;
+
+@mixin title {
+    font-family: "OpenSansCondensed-Light", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.43rem;
+    line-height: 4.64rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;    
+    color: $color-primary;    
+}
+@mixin button {
+    min-width: 160px;
+    padding: 10px;
+    background: $color-secondary;
+    font-family: 'OpenSansCondensed-Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.28rem;
+    line-height: 1.78rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: $color-primary;    
+}
