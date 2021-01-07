@@ -23,5 +23,12 @@ $color-third: #333333;
     line-height: 1.78rem;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
-    color: $color-primary;    
+    color: $color-primary; 
+    outline: none;
+    border: 1px solid $color-secondary;
+    &:hover {
+        color: $color-secondary;
+        background: $color-third;
+        border: 1px solid $color-secondary;
+    }   
 }
