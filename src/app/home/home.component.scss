@@ -80,7 +80,7 @@
 
 .section__first-screen {
     padding-top: 150px;
-    height: 100%;
+    padding-bottom: 190px;
     background: url('../../assets/images/first__screen-bg.jpg') center no-repeat;
     background-size: cover;
 }
@@ -118,4 +118,19 @@
 .poster__info-btn {
     @include button;
     margin-top: 50px;
+}
+@media(max-width: 1510px) {
+    .poster__slider {
+        display: none;
+    }
+}
+@media(max-width: 1098px) {
+    .social {
+        display: none;
+    }
+}
+@media(max-width: 890px) {
+    .poster__info-text {
+        padding-right: 0;
+    }
 }
