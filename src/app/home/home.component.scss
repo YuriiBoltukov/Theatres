@@ -119,9 +119,77 @@
     @include button;
     margin-top: 50px;
 }
+
+.section__second-screen {
+    margin-top: 150px;
+}
+.section__title {
+    @include title;
+    text-align: center;
+}
+.about {
+    display: flex;
+    justify-content: center;
+}
+.about__info {
+    max-width: 445px;  
+}
+.about__img {
+    width: 350px;
+    height: 292px;
+    background: url('../../assets/images/about__bg.jpg') center no-repeat;
+    background-size: contain;    
+}
+.about__descr,
+.about__img {
+    margin-left: 30px;
+}
+.about__title {
+    font-family: 'OpenSansCondensed-Bold' ,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2.07rem;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    color: $color-primary;    
+}
+.about__text,
+.about__statistics {
+    margin-top: 40px;
+}
+.about__statistics {
+
+}
+.about__statistics-item {
+    padding-top: 85px;
+    font-family: 'OpenSansCondensed-Bold' ,sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1,14rem;
+    line-height: 1,57rem;
+    letter-spacing: 0.05rem;
+    color: $color-primary;    
+    span {
+        color: $color-secondary;
+    }
+}
+.about__statistics-place {
+    background: url('../../assets/icons/about__place.svg') top left no-repeat;
+    background-size: auto 70px;
+}
+.about__statistics-history {
+    background: url('../../assets/icons/about__history.svg') top left no-repeat;
+    background-size: auto 70px;
+    margin-top: 25px;
+}
+
 @media(max-width: 1510px) {
     .poster__slider {
         display: none;
+    }
+    .poster {
+        margin-top: 180px;
     }
 }
 @media(max-width: 1098px) {
@@ -132,5 +200,8 @@
 @media(max-width: 890px) {
     .poster__info-text {
         padding-right: 0;
+    }
+    .poster {
+        margin-top: 150px;
     }
 }

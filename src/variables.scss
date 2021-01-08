@@ -10,7 +10,10 @@ $color-third: #333333;
     line-height: 4.64rem;
     letter-spacing: 0.1rem;
     text-transform: uppercase;    
-    color: $color-primary;    
+    color: $color-primary;
+    span {
+        color: $color-secondary;
+    }    
 }
 @mixin button {
     min-width: 160px;
