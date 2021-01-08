@@ -60,3 +60,30 @@
         <div class="about__img"></div>
     </div>
 </section>
+
+<section class="section section__third-screen">
+    <h4 class="section__title"><span>наши</span> постановки</h4>
+    <div class="section__wrapper staging">
+        <div class="staging__slider">
+
+        </div>
+    </div>
+</section>
+
+<section class="section section__fourth-screen">
+    <div class="section__wrapper rating">
+        <div class="rating__years">
+            <span class="rating__years-item">2018</span>
+            <span class="rating__years-item">2019</span>
+            <span class="rating__years-item">2020</span>
+        </div>
+        <div class="rating__descr">
+            <div class="rating__stars">
+                <div class="rating__stars-item" *ngFor="let i of [1,2,3,4,5]" [ngClass]="i > 3 ? '' : 'rating__stars-item_active'"></div>
+            </div>
+            <div class="rating__info">
+                Лучший театр по мнению театральных критиков Парижа
+            </div>
+        </div>
+    </div>
+</section>
